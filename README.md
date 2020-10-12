@@ -20,7 +20,7 @@ github.com/filtab/tabkit v0.0.1
     cli := mine.CreateByToken("SFInnoscnuHUISfphXXjoiojisg")
     
     // get information of your account
-    info := cli.Info()
+    info, err := cli.Info()
     
     // get balance of your miners
     balance := cli.GetBalance(mine.FIL)
